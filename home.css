@@ -13,6 +13,8 @@ html, body{
 	margin: auto;
 	font-family: Verdana, Arial, Helvetica, sans-serif;	/*se c'e' prende il primo font, altrimenti gli altri.*/
 	font-size: 100%;	/*il font sara' grande quanto l'utente ha impostato, teniamo conto delle preferenze del utente*/
+	background: #f2f2f2;
+  	font-family: 'Open Sans', sans-serif;
 }
 
 body{
@@ -22,16 +24,16 @@ body{
 /*SEZIONE HEADER*/
 #header{	/* # operatore di attribuzione per il campo id dei tag*/
 	/*text-align: center;*/
-	border: 20px solid black;
-	min-height: 10.5em;
-	padding: 1em;
+	border: 5px solid black;
+	min-height: 1.5em;
+	padding: 0.3em;
 }
 
 
 #breadcrumb h3{
 	font-size: 100%;	/*il font sara' grande quanto l'utente ha impostato, teniamo conto delle preferenze del utente*/
 	text-align: left;
-	margin: 200px;
+	margin: 15px;
 	float: left;
 }
 
@@ -39,18 +41,60 @@ body{
 	/*l'immagine adra' al centro*/
 	text-align: center;
 	background-color: #8bfbf9;
-	margin: 2px;
+	
 	
 	
 }
 #logo img{
-	height: 100px;
+	height: 50px;
+	width: 50px;
     
 }
-hkb
+
+/*//////////////////////////////////////////////////BARRA DI SEARCH/////////////////////////////////////////////*/
 
 
 
 
+.search {
+  width: 100%;
+  position: relative
+}
 
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid #00B4CC;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
 
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  position: absolute;  
+  right: -50px;
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
