@@ -23,42 +23,56 @@ body{
 
 /*SEZIONE HEADER*/
 #header{	/* # operatore di attribuzione per il campo id dei tag*/
-	/*text-align: center;*/
 	border: 5px solid black;
 	min-height: 1.5em;
-	padding: 0.3em;
+	padding: 1em;
+	background-color: #8bfbf9;
+	overflow: auto;
+
 }
 
+#breadcrumb {
+	margin-left: 2px;
+	margin-right: 20px;
+	float: left;
+	max-width: 40%;
+
+}
 
 #breadcrumb h3{
 	font-size: 100%;	/*il font sara' grande quanto l'utente ha impostato, teniamo conto delle preferenze del utente*/
 	text-align: left;
-	margin: 15px;
-	float: left;
+	
+	
+	
+	
 }
 
 #logo {
 	/*l'immagine adra' al centro*/
-	text-align: center;
-	background-color: #8bfbf9;
-	
-	
+	width: 15%;
+  	position: absolute;
+
+  	top: 6%;
+  	margin-left: 50%;
+  	margin-right: 50%;
+  	transform: translate(-50%, -50%);
+
 	
 }
 #logo img{
-	height: 50px;
+
 	width: 50px;
-    
+	height: 50px;
+	
+	
 }
 
-/*//////////////////////////////////////////////////BARRA DI SEARCH/////////////////////////////////////////////*/
-
-
-
+/*//////////////////////////////////////////////////BARRA DI RICERCA/////////////////////////////////////////////*/
 
 .search {
   width: 100%;
-  position: relative
+  position: relative;
 }
 
 .searchTerm {
@@ -87,14 +101,14 @@ body{
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 /*Resize the wrap to see the search bar change!*/
 .wrap{
-  width: 30%;
+  width: 15%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 20px;
+  right: 20px;
+  transform: translate(-120%, -6%);
 }
