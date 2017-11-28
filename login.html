@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HOME-EventSharing</title>
+        <meta name="description" content="Piattaforma per condividere il trasporto per un determinato evento." />
+		<meta name="keywords" content="eventi,passaggio,auto,sharing" />
+		<link rel="stylesheet" href="home.css" type="text/css"/>
+	</head>
+
+
+	<body>
+
+
+
+		<div id=header >	<!--DIV PER LA BARRA IN ALTA (LOGO, PERCORSO, MENU)-->
+
+		
+
+			<span id=logo>	<!--LOGO-->
+				<img src="logo1.png" alt="Logo Event Sharing">
+			</span>
+
+
+			<div class="wrap">	<!--BARRA DI RICERCA CON PULSANTE AVVIO RICERCA-->
+		   		<div class="search">
+		      		<input  class="searchTerm" type="text" placeholder="cerca cose">
+		      		<button type="submit" class="searchButton">
+		        		<i class="fa fa-search"></i>
+		     		</button>
+		   		</div>
+			</div>
+
+
+            
+    <script type="text/javascript" src="sha512.js"></script>
+<script type="text/javascript" src="forms.js"></script>
+<?php
+if(isset($_GET['error'])) { 
+   echo 'Error Logging In!';
+}
+?>
+<form action="process_login.php" method="post" name="login_form">
+   Email: <input type="text" name="email" /><br />
+   Password: <input type="password" name="p" id="password"/><br />
+   <input type="button" value="Login" onclick="formhash(this.form, this.form.password);" />
+</form>
+
+        <nav class="main-nav">
+ <ul id="main-menu">
+  <li class="menu-item"><a class="menu-link" href="#">Home</a>
+  <li class="menu-item"><a class="menu-link" href="autista.html">Vuoi offrire un passaggio?</a></li>
+  <li class="menu-item"><a class="menu-link" href="passaggio.html">Cerchi passaggio?</a></li>
+  <li class="menu-item"><a class="menu-link" href="#">Altro</a></li>
+
+ </ul>
+</nav>
+            
+
+  
+         
+	</body>
+</html>
+
