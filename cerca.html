@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+	<head>
+	
+		<title xml:lang="en">Parti! | Car Sharing</title>
+        <meta name="description" content="Piattaforma per condividere il trasporto per un determinato evento." />
+		<meta name="keywords" content="eventi,passaggio,auto,sharing" />
+		<link rel="stylesheet" media="handheld, screen" href="home.css" media"handled,only screen and (max-device-width:480px), screen and (max-width:480px)" />
+			<link rel="stylesheet" media="handheld, screen" href="mobstyle.css" />
+    
+	</head>
+
+
+	<body>
+        <div id=Titolo >
+			<img id="logo" src="logo.jpeg" alt="logo"/>
+			<h1 xml:lang="en">Parti !</h1>
+			<h4 xml:lang="en">Car sharing per i tuoi party.</h4>
+		</div>
+       
+<div id="pos">
+			<p>Ti trovi in: <span xml:lang="en"> Home </span></p>
+		</div>
+	
+
+            
+            <!-- login -->
+<div id="header_user">
+	<ul id="header_nav">
+	
+	
+		Benvenuto/a
+					<a href="login.html" class="login">Entra</a>
+				
+	
+        
+		</div>	
+    </div>
+            
+
+
+    
+ <ul id="divMenu">
+  <li class="menu-item"><a class="menu-link" href="#">Home</a>
+  <li class="menu-item"><a class="menu-link" href="autista.html">Offri passaggio?</a></li>
+  <li class="menu-item"><a class="menu-link" href="passaggio.html">Cerchi passaggio?</a></li>
+  <li class="menu-item"><a class="menu-link" href="#">Altro</a></li>
+
+ </ul>
+
+<div id="divContenuto">
+<script type=”text/javascript”>
+//Inserire qui il nome del dominio
+var domainroot=”www.html.it”
+
+var searchaction=[
+“http://www.google.com/search”,
+“http://search.yahoo.com/search”,
+“http://search.msn.com/results.aspx”
+]
+var queryfieldname=[“q”,”p”,”q”]
+function switchaction(cur, index){
+cur.form.action=searchaction[index]
+document.getElementById(“hiddenquery”).name=queryfieldname[index]
+}
+function jksitesearch(curobj){
+for (i=0; i< document.jksearch.se.length; i++){ //loop through radio to see
+which is checked if (document.jksearch.se[i].checked==true)
+switchaction(document.jksearch.se[i], i)
+}
+document.getElementById(“hiddenquery”).value=”site:”+domainroot+”
+“+curobj.qfront.value }
+</script> 
+        </div>
+
+
+
+	<div class="wrap">	<!--BARRA DI RICERCA CON PULSANTE AVVIO RICERCA-->
+		   		<div class="search">
+		      		<input  class="searchTerm" type="text" placeholder="cerca cose">
+		      		<button type="submit" class="searchButton">
+		        		<i class="fa fa-search"></i>
+		     		</button>
+		   		</div>
+			</div>		
+		
+     
+		<div id="Finale">
+			
+<p>Il sito &egrave; stato creato per il progetto nell'ambito del corso di <a href="https://elearning.unipd.it/math/course/view.php?id=232">Tecnologie Web</a> </p>
+			
+		</div>
+
+  
+         
+	</body>
+</html>
+
+
+

@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+
+<script>
+function cambiaTesto()
+{
+	alert("valore prima dell'onclick = "+document.getElementById('campoNascosto').value);
+	if(document.getElementById('campoNascosto').value= =0){
+		document.getElementById('campoNascosto').value=1;
+		document.getElementById('testo').innerHTML ="Ciao!";
+	}
+	else{
+		document.getElementById('campoNascosto').value=0;
+		document.getElementById('testo').innerHTML ="Testo";
+	}
+	alert("valore dopo dell'onclick = "+document.getElementById('campoNascosto').value);
+}
+</script>
+
+<div id=testo>Testo</div>
+<input type="Text" value="0">
+
+
+<input type=button value="Cambia Testo" onclick="cambiaTesto();">
+<input type=hidden id="campoNascosto" value="0">
+</body>
+</html>

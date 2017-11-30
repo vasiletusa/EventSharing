@@ -1,0 +1,147 @@
+/*SEZIONE GENERALE*/
+
+*{
+	/*valori di default, reseting*/
+	/*em e' un unita' di misura, indica la dimensione di m*/
+	padding: 0em;	
+	margin: 0em;
+}
+
+html, body{
+	/*vado a impostare la dimensione massima della pagian html, setto a 1024 pixels perche' e' una dimensione standard*/
+	max-width: 100%;		
+	margin: auto;
+	font-family: Verdana, Arial, Helvetica, sans-serif;	/*se c'e' prende il primo font, altrimenti gli altri.*/
+	font-size: 100%;	/*il font sara' grande quanto l'utente ha impostato, teniamo conto delle preferenze del utente*/
+	background: #f2f2f2;
+  	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	border: 1px solid #DDD;	/*bordo*/
+}
+
+/*SEZIONE HEADER*/
+#header{	/* # operatore di attribuzione per il campo id dei tag*/
+	border: 5px solid black;
+	min-height: 1.5em;
+	padding: 1em;
+	background-color: #8bfbf9;
+	overflow: auto;
+
+}
+
+#breadcrumb {
+	margin-left: 2px;
+	margin-right: 20px;
+	float: left;
+	max-width: 40%;
+
+}
+
+#breadcrumb h3{
+	font-size: 100%;	/*il font sara' grande quanto l'utente ha impostato, teniamo conto delle preferenze del utente*/
+	text-align: left;
+	
+	
+	
+	
+}
+
+#logo {
+	/*l'immagine adra' al centro*/
+	width: 15%;
+  	position: absolute;
+
+  	top: 6%;
+  	margin-left: 50%;
+  	margin-right: 50%;
+  	transform: translate(-50%, -50%);
+
+	
+}
+#logo img{
+    
+	width: 50px;
+	height: 50px;
+	
+	
+}
+
+
+ul#menu {
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul#menu li {
+    background-color: #FF831C;
+    border-left: 5px solid #54BAE2;
+    display: block;
+    width: 150px;
+    height: 30px;
+    margin: 2px 0;
+}
+
+ul#menu li a {
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    line-height: 30px;
+    padding-left: 15px;
+    text-decoration: none;
+    width: 135px; /* 150px - 15px (padding) */
+    height: 30px;
+}
+/*//////////////////////////////////////////////////BARRA DI RICERCA/////////////////////////////////////////////*/
+
+.search {
+  width: 100%;
+  position: relative;
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid #00B4CC;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+#header_user{
+    float right;
+    margin-left: 50em;
+}
+
+.searchButton {
+  position: absolute;  
+  right: -50px;
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 15%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transform: translate(-120%, -6%);
+}
