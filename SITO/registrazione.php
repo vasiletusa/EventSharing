@@ -1,9 +1,9 @@
 <?php 
 $host="localhost"; // Hostname 
-$username="programmarealpc"; // Mysql username 
-$password=""; // Mysql password 
-$db_name="my_programmarealpc"; //Nome del Database 
-$tbl_name="members"; // Nome della Tabella 
+$username="izanetti"; // Mysql username 
+$password="iwuoDuo7eiqu5ya"; // Mysql password 
+$db_name="izanetti"; //Nome del Database 
+$tbl_name="Login"; // Nome della Tabella 
 $db = mysql_connect($localhost,$username,$password); 
 mysql_select_db($db_name,$db); 
 

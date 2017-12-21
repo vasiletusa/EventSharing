@@ -1,6 +1,6 @@
 <?
-    $cn = mysql_connect("localhost", "mia_username", "mia_password");
-    @mysql_select_db("mio_database", $cn);
+    $cn = mysql_connect("localhost", "izanetti", "iwuoDuo7eiqu5ya");
+    @mysql_select_db("izanetti", $cn);
     $testo = isset($_POST["testo"]) ? htmlspecialchars($_POST["testo"]) : '';
 ?>
 <html><head><title>Risultati della ricerca</title></head><body>
@@ -27,7 +27,7 @@
     else
     {
         $arr_txt = explode(" ", $testo);
-        $sql = "SELECT * FROM articoli WHERE ";
+        $sql = "SELECT * FROM Events WHERE ";
         for ($i=0; $i<count($arr_txt); $i++)
         {
             if ($i > 0)
@@ -60,3 +60,5 @@
     }
 ?>
 </body></html>
+
+
